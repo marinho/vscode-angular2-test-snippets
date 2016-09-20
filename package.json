@@ -1,0 +1,31 @@
+{
+    "name": "Angular2Tests",
+    "publisher": "marinho",
+    "displayName": "Angular 2 TypeScript Test Snippets",
+    "description": "Angular 2 TypeScript test snippets (updated for 2.0.0 Final)",
+    "icon": "images/angular-shield.png",
+    "galleryBanner": {
+        "color": "#0273D4",
+        "theme": "dark"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/marinho/vscode-angular2-test-snippets"
+    },
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "0.10.x"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
+            }
+        ]
+    }
+}
