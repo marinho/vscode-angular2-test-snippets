@@ -15,10 +15,19 @@ https://code.visualstudio.com/docs/customization/userdefinedsnippets.
 
 ## Snippets
 
-### ng2-test-without-testbed
+### ng2-test-component
 
-The most basic type of test, which totally unit driven, ideal to write isolated tests of
-specific pure functions, classes and reducers.
+Basic component test recipe, including basic operations on DOM `nativeElement`, component
+creation and compilation and basic assertion examples.
+
+### ng2-test-component-routed
+
+This is a more complex component, including route manipulation, spying methods and manipulation
+of change detection.
+
+### ng2-test-component-service
+
+Test recipe covering a component with async and sync services.
 
 ### ng2-test-directive
 
@@ -30,16 +39,6 @@ directive as an example of it. Includes basic coverage on the DOM `nativeElement
 Test recipe covering a **Pipe**, which is mostly a single pure function in a class. Works
 mostly as simple unit test, but with Pipe basic structure.
 
-### ng2-test-component
-
-Basic component test recipe, including basic operations on DOM `nativeElement`, component
-creation and compilation and basic assertion examples.
-
-### ng2-test-component-routed
-
-This is a more complex component, including route manipulation, spying methods and manipulation
-of change detection.
-
 ### ng2-test-observable
 
 Basic test recipe covering observable and respective subscriptions.
@@ -50,9 +49,10 @@ Test recipe covering an action and consequent state change consuming by how it i
 **(ng2-redux)[https://github.com/angular-redux/ng2-redux/]** and
 **(Redux)[http://redux.js.org/]**.
 
-### ng2-test-component-service
+### ng2-test-without-testbed
 
-Test recipe covering a component with async and sync services.
+The most basic type of test, which totally unit driven, ideal to write isolated tests of
+specific pure functions, classes and reducers.
 
 ### To be done
 
