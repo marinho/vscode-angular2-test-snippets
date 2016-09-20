@@ -1,8 +1,8 @@
 {
     "name": "Angular2Tests",
-    "publisher": "marinho",
+    "publisher": "MarinhoBrandao",
     "displayName": "Angular 2 TypeScript Test Snippets",
-    "description": "Angular 2 TypeScript test snippets (updated for 2.0.0 Final)",
+    "description": "Angular 2 TypeScript test snippets (updated for Final)",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
         "color": "#0273D4",
