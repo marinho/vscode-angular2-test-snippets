@@ -6,8 +6,8 @@ in Angular 2 framework.
 
 ## Installation
 
-Search for "angular2-test-snippets" in https://marketplace.visualstudio.com/vscode to
-install it via Marketplace.
+Search for "angular2 test" in Visual Studio Code, or just jump straight to 
+https://marketplace.visualstudio.com/items?itemName=MarinhoBrandao.Angular2Tests
 
 You can alternatively fork/clone/download this repository and copy and paste the content of
 `typescript.json` into your file for customized snippets, following 
@@ -57,9 +57,11 @@ specific pure functions, classes and reducers.
 ### To be done
 
 - ng2-test-component-properties
+- ng2-test-form
+- ng2-test-guard
+- ng2-test-mockbackend
 - ng2-test-routes
 - ng2-test-service
-- ng2-test-form
 
 ## How this repository is maintained?
 

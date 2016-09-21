@@ -131,7 +131,7 @@
             "",
             "    it('${assertion:should enter the assertion}', () => {",
             "        fixture.detectChanges();",
-            "          // expect(el.nativeElement.textContent).toContain('Test Title');",
+            "        // expect(el.nativeElement.textContent).toContain('Test Title');",
             "        // expect((fixture.debugElement.classes as any).className).toBe(true);",
             "        expect(${value:enterAValue}).toBe(${result:enterTheExpectedResult});",
             "    });",
@@ -179,7 +179,7 @@
             "        .then(() => {",
             "            fixture = TestBed.createComponent(${EnterTheComponentName});",
             "            comp = fixture.componentInstance;",
-            "            comp.ngOnInit();",
+            "            fixture.detectChanges();",
             "        });",
             "    }));",
             "",
@@ -332,7 +332,7 @@
             "        .then(() => {",
             "            fixture = TestBed.createComponent(${EnterTheComponentName});",
             "            comp = fixture.componentInstance;",
-            "            comp.ngOnInit();",
+            "            fixture.detectChanges();",
             "        });",
             "    }));",
             "",
@@ -355,33 +355,49 @@
 
     "Component with Inputs and Output Test Recipe": {
         "prefix": "ng2-test-component-properties",
-        "description": "Recipe for testing an EventEmitter in Angular 2",
+        "description": "EMPTY - Recipe for testing an EventEmitter in Angular 2",
         "body": [
-            // TODO
-        ]
-    },
-
-    "Routes Test Recipe": {
-        "prefix": "ng2-test-routes",
-        "description": "Recipe for testing Routes in Angular 2",
-        "body": [
-            // TODO
-        ]
-    },
-
-    "Service Test Recipe": {
-        "prefix": "ng2-test-service",
-        "description": "Recipe for testing a Service in Angular 2",
-        "body": [
-            // TODO
+            "// TODO"
         ]
     },
 
     "Form Test Recipe": {
         "prefix": "ng2-test-form",
-        "description": "Recipe for testing Forms in Angular 2",
+        "description": "EMPTY - Recipe for testing Forms in Angular 2",
         "body": [
-            // TODO
+            "// TODO"
+        ]
+    },
+
+    "Guard Test Recipe": {
+        "prefix": "ng2-test-guard",
+        "description": "EMPTY - Recipe for testing route Guards in Angular 2",
+        "body": [
+            "// TODO"
+        ]
+    },
+
+    "Mockbackend Test Recipe": {
+        "prefix": "ng2-test-mockbackend",
+        "description": "EMPTY - Recipe for testing Http service with MockBackend in Angular 2",
+        "body": [
+            "// TODO"
+        ]
+    },
+
+    "Routes Test Recipe": {
+        "prefix": "ng2-test-routes",
+        "description": "EMPTY - Recipe for testing Routes in Angular 2",
+        "body": [
+            "// TODO"
+        ]
+    },
+
+    "Service Test Recipe": {
+        "prefix": "ng2-test-service",
+        "description": "EMPTY - Recipe for testing a Service in Angular 2",
+        "body": [
+            "// TODO"
         ]
     }
 }
