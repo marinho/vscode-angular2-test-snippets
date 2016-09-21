@@ -25,6 +25,10 @@ creation and compilation and basic assertion examples.
 This is a more complex component, including route manipulation, spying methods and manipulation
 of change detection.
 
+### ng2-test-component-properties
+
+Test recipe covering a component with Input, Output and HostBinding.
+
 ### ng2-test-component-service
 
 Test recipe covering a component with async and sync services.
@@ -56,7 +60,6 @@ specific pure functions, classes and reducers.
 
 ### To be done
 
-- ng2-test-component-properties
 - ng2-test-form
 - ng2-test-guard
 - ng2-test-mockbackend
