@@ -1,6 +1,6 @@
 # vscode-angular2-test-snippets
 
-Following John Papa's example on his handful (vscode-angular2-snippets)[https://github.com/johnpapa/vscode-angular2-snippets],
+Following John Papa's example on his handful [vscode-angular2-snippets](https://github.com/johnpapa/vscode-angular2-snippets),
 here is my **vscode-angular2-test-snippets** which is a collection of code snippets bringing recipes for each type of common
 in Angular 2 framework.
 
@@ -46,8 +46,8 @@ Basic test recipe covering observable and respective subscriptions.
 ### ng2-test-redux
 
 Test recipe covering an action and consequent state change consuming by how it is implemented in
-**(ng2-redux)[https://github.com/angular-redux/ng2-redux/]** and
-**(Redux)[http://redux.js.org/]**.
+**[ng2-redux](https://github.com/angular-redux/ng2-redux/)** and
+**[Redux](http://redux.js.org/)**.
 
 ### ng2-test-without-testbed
 
