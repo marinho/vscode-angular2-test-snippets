@@ -29,6 +29,6 @@
         ]
     },
     "scripts": {
-        "publish": "vsce publish",
+        "publish": "vsce publish"
     }
 }
