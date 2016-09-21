@@ -1,4 +1,4 @@
-// Version 0.1.0 - 2016-09-20
+// Version 0.2.1 - 2016-09-21
 {
     "Class unit test without TestBed": {
         "prefix": "ng2-test-without-testbed",
