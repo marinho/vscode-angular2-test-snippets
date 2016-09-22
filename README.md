@@ -58,13 +58,16 @@ Test recipe covering an action and consequent state change consuming by how it i
 The most basic type of test, which totally unit driven, ideal to write isolated tests of
 specific pure functions, classes and reducers.
 
+### ng2-test-service
+
+A simple test recipe using `beforeEachProviders` to setup a service test.
+
 ### To be done
 
 - ng2-test-form
 - ng2-test-guard
 - ng2-test-mockbackend
 - ng2-test-routes
-- ng2-test-service
 
 ## How this repository is maintained?
 

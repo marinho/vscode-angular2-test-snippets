@@ -1,4 +1,4 @@
-// Version 0.2.1 - 2016-09-21
+// Version 0.3.0 - 2016-09-22
 {
     "Class unit test without TestBed": {
         "prefix": "ng2-test-without-testbed",
@@ -61,13 +61,13 @@
             "            fixture.detectChanges();",
             "            let compiled = fixture.debugElement.nativeElement;",
             "",
-            "             // you may also try By.all or By.directive(directive)",
+            "            // you may also try By.all or By.directive(directive)",
             "            // let el = fixture.debugElement.query(By.css('.inside'));",
             "",
-            "             // expect(el.nativeElement.textContent).toContain('some text in here');",
+            "            // expect(el.nativeElement.textContent).toContain('some text in here');",
             "            expect(${value:enterAValue}).toBe('${result:enterTheExpectedResult}');",
             "",
-            "             // more matches here: https://goo.gl/hDEt05",
+            "            // more matches here: https://goo.gl/hDEt05",
             "        });",
             "    }));",
             "});"
@@ -120,7 +120,7 @@
             "    beforeEach(() => {",
             "        TestBed.configureTestingModule({",
             "            declarations: [${EnterTheComponentName}],",
-            "             providers: []",
+            "            providers: []",
             "        });",
             "",
             "        fixture = TestBed.createComponent(${EnterTheComponentName});",
@@ -481,9 +481,43 @@
 
     "Service Test Recipe": {
         "prefix": "ng2-test-service",
-        "description": "EMPTY - Recipe for testing a Service in Angular 2",
+        "description": "Recipe for testing a Service in Angular 2",
         "body": [
-            "// TODO"
+            "/*",
+            " * Testing a Service",
+            " * More info: https://angular.io/docs/ts/latest/guide/testing.html",
+            " */",
+            "",
+            "import { TestBed, async, inject } from '@angular/core/testing';",
+            "import { ${EnterTheServiceName} } from './${filename:enter-a-file-name}';",
+            "",
+            "describe('${EnterTheServiceName}', () => {",
+            "    let service;",
+            "",
+            "    beforeEach(() => {",
+            "        TestBed.configureTestingModule({",
+            "            declarations: [${EnterTheServiceName}],",
+            "            providers: [",
+            "                ${EnterTheServiceName}",
+            "                // for additional providers, write as examples below",
+            "                // ServiceName,",
+            "                // { provider: ServiceName, useValue: fakeServiceName },",
+            "                // { provider: ServiceName, useClass: FakeServiceClass },",
+            "                // { provider: ServiceName, useFactory: fakeServiceFactory, deps: [] },",
+            "            ]",
+            "        });",
+            "    });",
+            "",
+            "    // you can also wrap inject() with async() for asynchronous tasks",
+            "    // it('...', async(inject([...], (...) => {}));",
+            "",
+            "    it('${assertion:should enter the assertion}',",
+            "        inject([${EnterTheServiceName}], (s: ${EnterTheServiceName}) => {",
+            "            expect(${value:enterAValue}).toBe(${result:enterTheExpectedResult});",
+            "            // expect('1').toEqual(1);",
+            "        })",
+            "    );",
+            "});"
         ]
     }
 }
