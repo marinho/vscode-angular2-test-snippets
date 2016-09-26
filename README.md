@@ -38,6 +38,10 @@ Test recipe covering a component with async and sync services.
 Test recipe to cover a **Directive**, with a mocked container component implementing such 
 directive as an example of it. Includes basic coverage on the DOM `nativeElement`.
 
+### ng2-test-form
+
+Recipe for isolated unit tests covering a Reactive Form.
+
 ### ng2-test-pipe
 
 Test recipe covering a **Pipe**, which is mostly a single pure function in a class. Works
@@ -64,7 +68,6 @@ A simple test recipe using `beforeEachProviders` to setup a service test.
 
 ### To be done
 
-- ng2-test-form
 - ng2-test-guard
 - ng2-test-mockbackend
 - ng2-test-routes
