@@ -40,7 +40,11 @@ directive as an example of it. Includes basic coverage on the DOM `nativeElement
 
 ### ng2-test-form
 
-Recipe for isolated unit tests covering a Reactive Form.
+Recipe for isolated unit test covering a Reactive Form.
+
+### ng2-test-guard
+
+Recipe for isolated unit test covering a Route Guard.
 
 ### ng2-test-pipe
 
@@ -68,7 +72,6 @@ A simple test recipe using `beforeEachProviders` to setup a service test.
 
 ### To be done
 
-- ng2-test-guard
 - ng2-test-mockbackend
 - ng2-test-routes
 

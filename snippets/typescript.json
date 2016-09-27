@@ -1,4 +1,4 @@
-// Version 0.4.1 - 2016-09-26
+// Version 0.5.0 - 2016-09-27
 {
     "Class unit test without TestBed": {
         "prefix": "ng2-test-without-testbed",
@@ -20,7 +20,8 @@
             "        expect(${value:enterAValue}).toBe(${result:enterTheExpectedResult});",
             "        // expect('1').toEqual(1);",
             "    });",
-            "});"
+            "});",
+            ""
         ]
     },
 
@@ -60,7 +61,8 @@
             "        // expect((fixture.debugElement.classes as any).className).toBe(true);",
             "        expect(${value:enterAValue}).toBe(${result:enterTheExpectedResult});",
             "    });",
-            "});"
+            "});",
+            ""
         ]
     },
 
@@ -116,7 +118,8 @@
             "        expect(spy.calls.mostRecent().args[0]).toEqual([ '/' ]);",
             "        // expect(spy.calls.mostRecent().args[1].queryParams.paramName).toEqual('value');",
             "    }));",
-            "});"
+            "});",
+            ""
         ]
     },
 
@@ -166,7 +169,8 @@
             "            // more matches here: https://goo.gl/hDEt05",
             "        });",
             "    }));",
-            "});"
+            "});",
+            ""
         ]
     },
 
@@ -191,7 +195,8 @@
             "    it('${assertion:should enter the assertion}', () => {",
             "        expect(pipe.transform(${value:enterAValue})).toBe('${result:enterTheExpectedResult}');",
             "    });",
-            "});"
+            "});",
+            ""
         ]
     },
 
@@ -229,7 +234,8 @@
             "            }",
             "        });",
             "    });",
-            "});"
+            "});",
+            ""
         ]
     },
 
@@ -275,7 +281,8 @@
             "                    expect(value).toEqual(${result:enterTheExpectedResult});",
             "                });",
             "        }));",
-            "});"
+            "});",
+            ""
         ]
     },
 
@@ -350,6 +357,7 @@
             "        expect(${value2:enterAValue}).toBe(${result2:enterTheExpectedResult});",
             "    }));",
             "});",
+            ""
         ]
     },
 
@@ -443,7 +451,8 @@
             "        expect(buttonWasClicked).toBeTruthy();",
             "        sub.unsubscribe();",
             "    }));",
-            "});"
+            "});",
+            ""
         ]
     },
 
@@ -515,7 +524,8 @@
             "        // expect(comp.messageStrip.showMessage.calls.any())",
             "        //     .toBe(true, 'messageStrip.showMessage was not called');",
             "    });",
-            "});"
+            "});",
+            ""
         ]
     },
 
@@ -523,25 +533,70 @@
         "prefix": "ng2-test-guard",
         "description": "EMPTY - Recipe for testing route Guards in Angular 2",
         "body": [
-            "// TODO"
+            "/*",
+            " * Testing a route guard",
+            " * More info: https://angular.io/docs/ts/latest/guide/testing.html#!#isolated-unit-tests",
+            " *            https://angular.io/docs/ts/latest/guide/router.html#!#guards",
+            " */",
+            "",
+            "import { ${EnterTheGuardName} } from './${filename:enter-the-file-name}.guard';",
+            "",
+            "describe('${EnterTheGuardName}', () => {",
+            "    let guard;",
+            "",
+            "    let fakeRouter: any = { };",
+            "    let fakeRouterState: any = { }; // RouterStateSnapshot",
+            "    let fakeActivatedRoute: any; // ActivatedRouteSnapshot", 
+            "",
+            "    beforeEach(() => {",
+            "        guard = new ${EnterTheGuardName}(fakeRouter);",
+            "    });",
+            "",
+            "    it('${assertion1:should enter an assertion return boolean}', () => {",
+            "        // canActivate, canActivateChild, canDeactivate, resolve, canLoad",
+            "        let result = guard.canActivate({",
+            "            // example route in here",
+            "            path: '${path:enter an optional route path}',",
+            "            // data: { }",
+            "        }, fakeRouterState);",
+            "",
+            "        expect(result).toBeFalsy(); // .toBeTruthy()",
+            "    });",
+            "",
+            "    it('${assertion2:should enter an assertion return observable}', done => {",
+            "        let obs$ = guard.canActivate({",
+            "            // example route in here",
+            "            path: '${path:enter an optional route path}',",
+            "            // data: { }",
+            "        }, fakeRouterState);",
+            "",
+            "        obs$.subscribe(result => {",
+            "            expect(result).toBeFalsy(); // .toBeTruthy()",
+            "            done();",
+            "        });",
+            "    });",
+            "});",
+            ""
         ]
     },
 
-    "Mockbackend Test Recipe": {
-        "prefix": "ng2-test-mockbackend",
-        "description": "EMPTY - Recipe for testing Http service with MockBackend in Angular 2",
-        "body": [
-            "// TODO"
-        ]
-    },
+    // "Mockbackend Test Recipe": {
+    //     "prefix": "ng2-test-mockbackend",
+    //     "description": "EMPTY - Recipe for testing Http service with MockBackend in Angular 2",
+    //     "body": [
+    //         "// TODO",
+    //         ""
+    //     ]
+    // },
 
-    "Routes Test Recipe": {
-        "prefix": "ng2-test-routes",
-        "description": "EMPTY - Recipe for testing Routes in Angular 2",
-        "body": [
-            "// TODO"
-        ]
-    },
+    // "Routes Test Recipe": {
+    //     "prefix": "ng2-test-routes",
+    //     "description": "EMPTY - Recipe for testing Routes in Angular 2",
+    //     "body": [
+    //         "// TODO",
+    //         ""
+    //     ]
+    // },
 
     "Service Test Recipe": {
         "prefix": "ng2-test-service",
@@ -581,7 +636,8 @@
             "            // expect('1').toEqual(1);",
             "        })",
             "    );",
-            "});"
+            "});",
+            ""
         ]
     }
 }
