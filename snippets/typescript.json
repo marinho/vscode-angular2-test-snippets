@@ -582,18 +582,40 @@
 
     // "Mockbackend Test Recipe": {
     //     "prefix": "ng2-test-mockbackend",
-    //     "description": "EMPTY - Recipe for testing Http service with MockBackend in Angular 2",
+    //     "description": "Recipe for testing Http service with MockBackend in Angular 2",
     //     "body": [
-    //         "// TODO",
     //         ""
     //     ]
     // },
 
     // "Routes Test Recipe": {
     //     "prefix": "ng2-test-routes",
-    //     "description": "EMPTY - Recipe for testing Routes in Angular 2",
+    //     "description": "Recipe for testing Routes in Angular 2",
     //     "body": [
-    //         "// TODO",
+    //         ""
+    //     ]
+    // },
+
+    // "Test Recipe using fakeAsync": {
+    //     "prefix": "ng2-test-fake-async",
+    //     "description": "Recipe for a test using fakeAsync and tick functions",
+    //     "body": [
+    //         ""
+    //     ]
+    // },
+
+    // "E2E Test Recipe for Protractor and Jasmine": {
+    //     "prefix": "ng2-test-e2e-jasmine",
+    //     "description": "Recipe for an end-to-end test with Protractor and Jasmine",
+    //     "body": [
+    //         ""
+    //     ]
+    // },
+
+    // "E2E Test Recipe with a Gherkin scenario": {
+    //     "prefix": "ng2-test-e2e-cocumber",
+    //     "description": "Recipe for an end-to-end test following Gherkin syntax using Protractor and Cocumber",
+    //     "body": [
     //         ""
     //     ]
     // },

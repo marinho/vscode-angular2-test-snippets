@@ -74,6 +74,9 @@ A simple test recipe using `beforeEachProviders` to setup a service test.
 
 - ng2-test-mockbackend
 - ng2-test-routes
+- ng2-test-fake-async
+- ng2-test-e2e-jasmine
+- ng2-test-e2e-cocumber
 
 ## How this repository is maintained?
 
