@@ -1,4 +1,4 @@
-// Version 0.6.0 - 2016-10-25
+// Version 0.6.1 - 2016-10-26
 {
     "Class unit test without TestBed": {
         "prefix": "ng2-test-without-testbed",
@@ -616,7 +616,7 @@
             "",
             "    it('${assertion:should enter the assertion}', inject(",
             "        [ MockBackend, ${EnterTheServiceName} ],",
-            "        ( s: ${EnterTheServiceName}, backend: MockBackend ) => {",
+            "        ( backend: MockBackend, s: ${EnterTheServiceName} ) => {",
             "            const urls = [];",
             "",
             "            backend.connections.subscribe((connection: MockConnection) => {",
