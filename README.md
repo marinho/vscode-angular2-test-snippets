@@ -70,11 +70,13 @@ specific pure functions, classes and reducers.
 
 A simple test recipe using `beforeEachProviders` to setup a service test.
 
+### ng2-test-mockbackend
+
+A test recipe using **MockBackend** and **MockConnection** to mock HTTP requests.
+
 ### To be done
 
-- ng2-test-mockbackend
 - ng2-test-routes
-- ng2-test-fake-async
 - ng2-test-e2e-jasmine
 - ng2-test-e2e-cocumber
 

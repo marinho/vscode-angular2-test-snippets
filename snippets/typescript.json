@@ -1,4 +1,4 @@
-// Version 0.5.0 - 2016-09-27
+// Version 0.6.0 - 2016-10-25
 {
     "Class unit test without TestBed": {
         "prefix": "ng2-test-without-testbed",
@@ -294,7 +294,8 @@
             " * Testing a Component with async services",
             " * More info: https://angular.io/docs/ts/latest/guide/testing.html#!#component-with-async-service",
             " */",
-            "import { TestBed, async, inject, takeAsync, tick } from '@angular/core/testing';",
+            "import { TestBed, async, inject, fakeAsync, tick } from '@angular/core/testing';",
+            "import { NO_ERRORS_SCHEMA } from '@angular/core';",
             "import { ChangeDetectorRef } from '@angular/core';",
             "import { Pipe, PipeTransform } from '@angular/core';",
             "",
@@ -325,6 +326,7 @@
             "",
             "    beforeEach(async(() => {",
             "        TestBed.configureTestingModule({",
+            "            schemas: [ NO_ERRORS_SCHEMA ],",
             "            declarations: [",
             "                ${EnterTheComponentName},",
             "                FakeTranslatePipe",
@@ -580,25 +582,62 @@
         ]
     },
 
-    // "Mockbackend Test Recipe": {
-    //     "prefix": "ng2-test-mockbackend",
-    //     "description": "Recipe for testing Http service with MockBackend in Angular 2",
-    //     "body": [
-    //         ""
-    //     ]
-    // },
+    "MockBackend Test Recipe": {
+        "prefix": "ng2-test-mockbackend",
+        "description": "Recipe for testing Http service with MockBackend in Angular 2",
+        "body": [
+            "/*",
+            " * Testing a Service with MockBackend",
+            " * More info: https://angular.io/docs/ts/latest/api/http/testing/index/MockBackend-class.html",
+            " */",
+            "",
+            "import { TestBed, async, inject } from '@angular/core/testing';",
+            "import { Http, BaseRequestOptions, RequestMethod, ConnectionBackend } from '@angular/http';",
+            "import { MockBackend, MockConnection } from '@angular/http/testing';",
+            "",
+            "import { ${EnterTheServiceName} } from './${filename:enter-a-file-name}';",
+            "",
+            "describe('${EnterTheServiceName}', () => {",
+            "    let service;",
+            "",
+            "    beforeEach(() => {",
+            "        TestBed.configureTestingModule({",
+            "            declarations: [${EnterTheServiceName}],",
+            "            providers: [",
+            "                BaseRequestOptions,",
+            "                MockBackend,",
+            "                ConnectionBackend,",
+            "                {provide: Http, useFactory: (backend, options) => new Http(backend, options),",
+            "                    deps: [ MockBackend, BaseRequestOptions ]},",
+            "                ${EnterTheServiceName}",
+            "            ]",
+            "        });",
+            "    });",
+            "",
+            "    it('${assertion:should enter the assertion}', inject(",
+            "        [ MockBackend, ${EnterTheServiceName} ],",
+            "        ( s: ${EnterTheServiceName}, backend: MockBackend ) => {",
+            "            const urls = [];",
+            "",
+            "            backend.connections.subscribe((connection: MockConnection) => {",
+            "                const req = connection.request;",
+            "                urls.push(req.url);",
+            "                if (req.method === RequestMethod.Get && req.url === '${/enter/the/url}') {",
+            "                    connection.mockRespond('${enter the mocked content}');",
+            "                }",
+            "            });",
+            "",
+            "            expect(${value:enterAValue}).toBe(${result:enterTheExpectedResult});",
+            "        })",
+            "    );",
+            "});",
+            ""
+        ]
+    },
 
     // "Routes Test Recipe": {
     //     "prefix": "ng2-test-routes",
     //     "description": "Recipe for testing Routes in Angular 2",
-    //     "body": [
-    //         ""
-    //     ]
-    // },
-
-    // "Test Recipe using fakeAsync": {
-    //     "prefix": "ng2-test-fake-async",
-    //     "description": "Recipe for a test using fakeAsync and tick functions",
     //     "body": [
     //         ""
     //     ]
