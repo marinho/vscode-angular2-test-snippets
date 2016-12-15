@@ -81,7 +81,7 @@
 
     "Component with Route and Spy Test Recipe": {
         "prefix": "ng2-test-component-routed",
-        "description": "Recipe for testing a Component with asynchronous Service dependency in Angular 2",
+        "description": "Recipe for testing a Routed Component in Angular 2",
         "body": [
             "/*",
             " * Testing a Component with Router and Spy",
@@ -133,7 +133,7 @@
 
     "Component with Services Test Recipe": {
         "prefix": "ng2-test-component-service",
-        "description": "Recipe for testing a Routed Component in Angular 2",
+        "description": "Recipe for testing a Component with asynchronous Service dependency in Angular 2",
         "body": [
             "/*",
             " * Testing a Component with async services",
